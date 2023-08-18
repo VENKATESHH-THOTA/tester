@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEGGIES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>VEGGIES</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#footer">blogs</a>
+        </nav>
+        <div class="dropdown">
+            <div class="select">
+               <span class="selected">Location</span>
+               <div class="caret"></div>
+            </div>
+            <ul class="menu">
+               <li>Andhra Pradesh</li>
+               <li>Arunachal Pradesh</li>
+               <li>Assam</li>
+               <li>Bihar</li>
+               <li>Chandigarh</li>
+               <li>Chattisgarh</li>
+               <li>Delhi</li>
+               <li>Goa</li>
+               <li>Gujarat</li>
+               <li>Haryana</li>
+               <li>Himachal Pradesh</li>
+               <li>jammu and Kashmir</li>
+               <li>Jharkhand</li>
+               <li>Karnataka</li>
+               <li>Kerala</li>
+               <li>Madhya Pradesh</li>
+               <li>Maharashtra</li>
+               <li>Manipur</li>
+               <li>Meghalaya</li>
+               <li>Mizoram</li>
+               <li>Nagaland</li>
+               <li>odisha</li>
+               <li>Punjab</li>
+               <li>Rajasthan</li>
+               <li>Sikkim</li>
+               <li>Tamil Nadu</li>
+               <li>Telangana</li>
+               <li>Tripura<li>
+               <li>Uttarpradesh</li>
+               <li>Uttarakhand</li>
+               <li>West Bengal</li>
+           </ul>
+          </div>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-users" id="login-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="capsicum.jpeg" alt="">
+                <div class="content">
+                    <h3>Capsicum</h3>
+                    <span class="price">RS100/-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="tomato.jpeg" alt="">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">RS 50/-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="onion.jpeg" alt="">
+                <div class="content">
+                    <h3>Tomato</h3>
+                    <span class="price">RS100/-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="total">total:RS 250</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="Register.html">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        
+    </header>
+    
+    <section class="home" id="home">
+        <div class="content">
+        <h3>fresh and <span>organic</span>products</h3>
+            <a href="#products" class="btn">Shop now</a>      
+        </div>
+    </section>
+
+    <section class="features" id="features"> 
+
+        <h1 class="heading">our <span>features</span> </h1>
+
+        <div class="box-container">
+
+            <div class = "box">
+              <img src="fresh.png" alt="">
+              <h3>fresh and organic</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam deserunt </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class = "box">
+                <img src="delivery.png" alt="">
+                <h3>free delievery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam deserunt </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class = "box">
+                <img src="easypay.jpeg" alt="">
+                <h3>easy payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam deserunt </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+ <!--PRODUCTS-->   
+ <section class="products" id="products">
+    <h1 class="heading"> our <span>products</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider box">
+                <img src="products/onion.jpeg" alt="">
+                <h3>fresh Onion</h3>
+                <div class="price">40/- - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+        <div class="swiper-slider box">
+            <img src="products/cucumber.jpeg" alt="">
+            <h3>fresh cucumber</h3>
+            <div class="price">40/- - 100/-Rs</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">add to cart</a>
+    </div>
+    <div class="swiper-slider box">
+        <img src="products/cabbage.jpeg" alt="">
+        <h3>fresh cabbage</h3>
+        <div class="price">40/- - 100/-Rs</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+    </div>
+    <a href="#" class="btn">add to cart</a>
+</div>
+<div class="swiper-slider box">
+    <img src="products/greenchilli.jpeg" alt="">
+    <h3>fresh greenchilli</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+<div class="swiper-slider box">
+    <img src="products/cauliflower.jpeg" alt="">
+    <h3>fresh cauliflower</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+</div>
+    </div>
+
+
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider box">
+                <img src="products/Ginger.jpeg" alt="">
+                <h3>fresh ginger</h3>
+                <div class="price">40/- - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+               <a href="#" class="btn">add to cart</a>
+           </div>
+
+           <div class="swiper-slider box">
+            <img src="products/brinjal.jpeg" alt="">
+            <h3>fresh brinjal</h3>
+            <div class="price">40/- - 100/-Rs</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+           </div>
+             <a href="#" class="btn">add to cart</a>
+          </div>
+
+    <div class="swiper-slider box">
+        <img src="products/radish.jpeg" alt="">
+        <h3>fresh Radish</h3>
+        <div class="price">40/- - 100/-Rs</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">add to cart</a>
+    </div>
+<div class="swiper-slider box">
+    <img src="products/ladiesfinger.jpeg" alt="">
+    <h3>fresh ladiesfinger</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+<div class="swiper-slider box">
+    <img src="products/tomoto.jpeg" alt="">
+    <h3>fresh tomato</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+</div>
+    </div>
+
+
+
+    
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider box">
+                <img src="products/kale.jpg" alt="">
+                <h3>fresh Kale</h3>
+                <div class="price">40/- - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+               <a href="#" class="btn">add to cart</a>
+           </div>
+
+           <div class="swiper-slider box">
+            <img src="products/celery2.jpg" alt="">
+            <h3>fresh celery</h3>
+            <div class="price">40/- - 100/-Rs</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+           </div>
+             <a href="#" class="btn">add to cart</a>
+          </div>
+
+    <div class="swiper-slider box">
+        <img src="products/carrot.jpg" alt="">
+        <h3>fresh carrot</h3>
+        <div class="price">40/- - 100/-Rs</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">add to cart</a>
+    </div>
+<div class="swiper-slider box">
+    <img src="products/mustard-green.jpg" alt="">
+    <h3>fresh mustard green</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+<div class="swiper-slider box">
+    <img src="products/spinach.jpg" alt="">
+    <h3>fresh spinach</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+</div>
+    </div>
+    
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider box">
+                <img src="products/green lemon.jpg" alt="">
+                <h3>fresh lemon</h3>
+                <div class="price">40/- - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+               <a href="#" class="btn">add to cart</a>
+           </div>
+
+           <div class="swiper-slider box">
+            <img src="products/greencap.jpeg" alt="">
+            <h3>fresh Green capsicum</h3>
+            <div class="price">40/- - 100/-Rs</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+           </div>
+             <a href="#" class="btn">add to cart</a>
+          </div>
+
+    <div class="swiper-slider box">
+        <img src="products/corn.jpeg" alt="">
+        <h3>fresh corn</h3>
+        <div class="price">40/- - 100/-Rs</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">add to cart</a>
+    </div>
+<div class="swiper-slider box">
+    <img src="products/red.jpeg" alt="">
+    <h3>fresh Red capsicum</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+<div class="swiper-slider box">
+    <img src="products/yellow.jpeg" alt="">
+    <h3>fresh Yellow capsicum</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+</div>
+    </div>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slider box">
+                <img src="products/bitter.jpeg" alt="">
+                <h3>fresh Bitter gourd</h3>
+                <div class="price">40/- - 100/-Rs</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+               <a href="#" class="btn">add to cart</a>
+           </div>
+
+           <div class="swiper-slider box">
+            <img src="products/bottle.jpeg" alt="">
+            <h3>fresh Green capsicum</h3>
+            <div class="price">40/- - 100/-Rs</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+           </div>
+             <a href="#" class="btn">add to cart</a>
+          </div>
+
+    <div class="swiper-slider box">
+        <img src="products/drum.jpeg" alt="">
+        <h3>fresh drumsticks</h3>
+        <div class="price">40/- - 100/-Rs</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">add to cart</a>
+    </div>
+<div class="swiper-slider box">
+    <img src="products/cluster.jpeg" alt="">
+    <h3>fresh cluster beans</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+<div class="swiper-slider box">
+    <img src="products/beet.jpeg" alt="">
+    <h3>fresh Yellow beetroot</h3>
+    <div class="price">40/- - 100/-Rs</div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">add to cart</a>
+</div>
+
+</div>
+    </div>
+
+</section>
+<!--
+    <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+           
+            <div class="box">
+            <img src = "onion.jpeg" alt="1">
+               <p>upto 20% off</p>
+               <a href="#" class="btn">shop now</a> 
+           </div>
+           <div class="box">
+            <img src = "brinjal.jpeg" alt="2">
+               <p>upto 20% off</p>
+               <a href="#" class="btn">shop now</a> 
+           </div>
+            <div class="box">
+             <img src = "leaf.jpeg" alt="3">
+               <p>upto 20% off</p>
+               <a href="#" class="btn">shop now</a> 
+           </div> 
+           
+           <div class="box">
+            <img src = "tomato.jpeg" alt="4">
+               <p>upto 20% off</p>
+               <a href="#" class="btn">shop now</a> 
+           </div>
+    
+        </div>
+    </section>
+-->
+    <section class="footer" id="footer">
+     <div class="box-container">
+          
+        <div class="box">
+            <h3> VEGGIES <i class="fas fa-shopping-basket"></i></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus. Nesciunt distinctio doloremque reprehenderit molestias quos, sequi impedit perspiciatis earum. Dignissimos nulla placeat fugit facere ratione corrupti, cupiditate laborum! Odio?</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+           <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i>abc@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>Hyderabad,india-500010</a>
+           </div>
+           
+           <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>home</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>features</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>products</a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i>blogs</a>
+           </div>
+    
+           <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="email" class="email">
+            <input type="submit" value="submit" class="btn">
+            <img src="payment2.jpeg" class="payment-img" alt="">
+           </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
